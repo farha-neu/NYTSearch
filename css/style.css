@@ -6,3 +6,8 @@
     background: indigo;
     color: white;
 }
+
+.btn-primary{
+    background: indigo;
+    border: 0px;
+}
