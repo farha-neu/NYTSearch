@@ -1,13 +1,33 @@
 .card{
     margin-bottom: 40px;
+    border:1px solid indigo;
+}
+
+.form-control{
+    border:1px solid indigo;
+}
+
+.card-header {
+    border-bottom: 1px solid indigo;
 }
 
 .jumbotron{
+    font-family: 'Abril Fatface', cursive;
     background: indigo;
     color: white;
 }
 
 .btn-primary{
+    font-family: 'Abril Fatface', cursive;
     background: indigo;
     border: 0px;
+}
+footer {
+    margin-left: 500px;
+    font-family: 'Abril Fatface', cursive;
+    color: indigo;
+    font-weight: bold;
+}
+.fa-users {
+    color: indigo;
 }
