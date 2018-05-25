@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="text-center">New York Times Search</h1>      
+  </div>  
+  <!-- form -->
+  <div class="card">
+    <div class="card-header">
+        Search Parameters
+    </div>
+    <div class="card-body">
+        <form id="seach-form">
+            <div class="form-group">
+              <label for="search-term">Search Term</label>
+              <input type="text" class="form-control" id="term-input" placeholder="Enter keywords">
+            </div>
+            <div class="form-group">
+              <label for="records">Number of Records to Retrieve:</label>
+              <input type="text" class="form-control" id="record" placeholder="Enter number of records">
+            </div>
+            <div class="form-group">
+                <label for="records">Start Year(Optional):</label>
+                <input type="text" class="form-control" id="start-year">
+            </div>
+            <div class="form-group">
+                    <label for="records">End Year(Optional):</label>
+                    <input type="text" class="form-control" id="end-year">
+            </div>
+            
+            <button id="search-news" type="submit" class="btn btn-primary">Search</button>
+            <button id="clear-result" type="submit" class="btn btn-primary">Clear Results</button>
+       </form>
+    </div>
+</div>
+
+<!-- result -->
+
+<div class="card">
+        <div class="card-header">
+           Top Articles
+        </div>
+        <div class="card-body" id="result">
+            
+        </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
