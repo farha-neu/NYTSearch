@@ -68,6 +68,26 @@
 
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  $("#search-news").on("click",function(){
+    event.preventDefault();
+  var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?' + $.param({
+  'api-key': "fac1de5e695f4a13b177125b0dfa9a55",
+  'q': $("#term-input").val()
+}); console.log(url);
+$.ajax({
+  url: url,
+  method: 'GET',
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+});
+});
+</script>
+
 
 </body>
 </html>
